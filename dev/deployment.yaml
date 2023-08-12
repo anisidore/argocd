@@ -2,8 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: guestbook-ui
+  namespace: myapp
 spec:
-  replicas: 2
+  replicas: 4
   revisionHistoryLimit: 3
   selector:
     matchLabels:
